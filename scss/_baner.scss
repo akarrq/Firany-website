@@ -1,0 +1,47 @@
+.baner {
+  position: relative;
+  margin-top: 10vh;
+  left: 0;
+  right: 0;
+  height: 30vh;
+  z-index: -1;
+  &__element {
+    position: relative;
+    left: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation: baner 30s ease infinite;
+  }
+  &__first-el {
+    top: 0;
+    background-image: url(/img/firany1-640.jpg);
+    animation-delay: 20s;
+  }
+  &__second-el {
+    top: -100%;
+    background-image: url(/img/firany2-640.jpg);
+    animation-delay: 10s;
+  }
+  &__third-el {
+    top: -200%;
+    background-image: url(/img/firany3-640.jpg);
+    background-position: bottom;
+  }
+}
+
+@keyframes baner {
+  10% {
+    opacity: 1;
+  }
+
+  43.3% {
+    opacity: 1;
+  }
+
+  53.33% {
+    opacity: 0;
+  }
+}

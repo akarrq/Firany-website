@@ -1,108 +1,139 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Firany Bella - Aranżacja i dekoracja okien, szycie firan</title>
+    <meta
+      name="description"
+      content="Zajmujemy się dekoracjami okiennymi, szyciem oraz sprzedażą firan. Nasi eksperci pomagają w wyborze firan do pokoju, salonu czy kuchni. Sprawdź nas!"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Firany Bella - Aranżacja i dekoracja okien, szycie firan</title>
-  <meta name="description"
-    content="Zajmujemy się dekoracjami okiennymi, szyciem oraz sprzedażą firan. Nasi eksperci pomagają w wybrze firan do pokoju, salonu czy kuchni. Sprawdź nas!">
+    <meta
+      name="google-site-verification"
+      content="0YzY91rCjc6Fx5ZOgh8S11WOZZS1aF_6vxOfnWUEtXc"
+    />
 
-  <meta name="google-site-verification" content="0YzY91rCjc6Fx5ZOgh8S11WOZZS1aF_6vxOfnWUEtXc" />
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <div class="site">
-
-    <div id="menu" class="menu">
-      <div class="logo">
-        <p>Firany Bella</p>
-        <i class="fas fa-bars menubtn"></i>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;subset=latin-ext"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__logo">
+        <p class="nav__logo-name">Firany Bella</p>
+        <i class="fas fa-bars nav__menu-btn" data-id="menuBtn"></i>
       </div>
-      <nav>
-        <ul>
-          <li>Produkty</li>
-          <li>Usługi</li>
-          <li>O nas</li>
-          <li>Kontakt</li>
+      <div class="nav__menu" data-id="menu">
+        <ul class="nav__menu-items">
+          <li class="nav__menu-item" data-id="menuItem">Produkty</li>
+          <li class="nav__menu-item" data-id="menuItem">Usługi</li>
+          <li class="nav__menu-item" data-id="menuItem">O nas</li>
+          <li class="nav__menu-item" data-id="menuItem">Kontakt</li>
         </ul>
-      </nav>
-    </div>
-    <div class="baner">
-      <div class="b1"></div>
-      <span></span>
-      <div class="b2"></div>
-      <div class="b3"></div>
-    </div>
-    <div class="products">
-      <h1>Produkty</h1>
-      <p>W naszej ofercie znajdą Państwo szeroki wybór wysokiej jakości tkanin zarówno polskich jak i importowanych. W
-        naszej kolekcji znajdują się materiały firanowe i zasłonowe, tkaniny obiciowe, gipiury, organzy, woale, żakardy,
-        lamówki oraz taśmy. Oferujemy karnisze kute i mosiężne, ponadto dodatki do szyn oraz karniszy.</p>
-      <div class="img product1"></div>
-      <p>Oferujemy tkaniny renomowanych firm: RAND, MARCIN DECOR, MARGO, OZLEM, SAKARYA DECOR, PAMAL, HAFT, MARKIZETA,
-        BOJANEK. Są to nasi stali dostawcy sprawdzeni pod względem jakości.</p>
-      <div class="wraper">
-        <div class="img product2"></div>
-        <div class="img product3"></div>
       </div>
-      <span></span>
-    </div>
-    <div class="services">
-      <h1>Usługi</h1>
-      <p>Zajmujemy się dekoracjami okiennymi w szerokim tego słowa znaczeniu. Zaczynając od planów wystroju, poprzez
-        karnisze i dodatki, aż po szycie konkretnych projektów. Zajmujemy się sprzedażą detaliczną tkanin oraz szyciem
-        zakupionych w naszym sklepie materiałów. Każde zlecenie traktujemy indywidualnie. Na Państwa życzenie
-        podejmujemy
-        się projektów, takich jak: szycie firan, zasłon, obrusów, kap, poduszek czy innych tekstyliów.
-      </p>
-      <div class="wraper">
-        <div class="img service1"></div>
-        <div class="img service2"></div>
-        <div class="img service3"></div>
-      </div>
-      <span></span>
-    </div>
-    <div class="about">
-      <h1>O nas</h1>
-      <div class="wraper">
-        <p>Od 1990 roku specjalizujemy się w zakresie kompleksowej dekoracji okna. Założeniem firmy Bella jest
-          przygotowanie cieszącego oko, nowatorskiego wystroju, łącząc elegancję i aktualne trendy, przy równoczesnej
-          kontynuacji sprzedaży wzorów tradycyjnych, sprawdzonych i ponadczasowych.</p>
-      </div>
-      <span></span>
-    </div>
-    <div class="contact">
-      <h1>Kontakt</h1>
+    </nav>
+    <header class="baner">
+      <div class="baner__element baner__first-el"></div>
+      <div class="baner__element baner__second-el"></div>
+      <div class="baner__element baner__third-el"></div>
+    </header>
+    <main class="site">
+      <section class="section">
+        <h2 class="section__title" data-id="section">Produkty</h2>
+        <h1 class="section__description">
+          W naszej ofercie znajdą Państwo szeroki wybór wysokiej jakości tkanin
+          zarówno polskich jak i importowanych.
+        </h1>
+        <div id="product1" class="section__img"></div>
+        <p class="section__description">
+          W naszej kolekcji znajdują się materiały firanowe i zasłonowe, tkaniny
+          obiciowe, gipiury, organzy, woale, żakardy, lamówki oraz taśmy.
+          Oferujemy karnisze kute i mosiężne, ponadto dodatki do szyn oraz
+          karniszy.
+        </p>
+        <div id="product2" class="section__img"></div>
+        <p class="section__description">
+          Oferujemy tkaniny renomowanych firm: RAND, MARCIN DECOR, MARGO, OZLEM,
+          SAKARYA DECOR, PAMAL, HAFT, MARKIZETA, BOJANEK. Są to nasi stali
+          dostawcy sprawdzeni pod względem jakości.
+        </p>
+        <div id="product3" class="section__img"></div>
+      </section>
 
-      <div class="wraper">
-        <div class="adress">
-          <h2>Godziny otwarcia:</h2>
-          <p>Poniedziałek - Piątek: 10:00 - 15:00</p>
-          <h2>Adres:</h2>
-          <p>Pilotów 3/43, 80-460 Gdańsk</p>
-          <h2>Telefon:</h2>
-          <p>58 761 82 12</p>
-          <p>573 018 700</p>
-          <h2>Email:</h2>
-          <p>bella@firany-bella.com.pl</p>
+      <section class="section">
+        <h2 class="section__title" data-id="section">Usługi</h2>
+        <p class="section__description">
+          Zajmujemy się dekoracjami okiennymi w szerokim tego słowa znaczeniu.
+          Zaczynając od planów wystroju, poprzez karnisze i dodatki, aż po
+          szycie konkretnych projektów.
+        </p>
+        <div id="service1" class="section__img"></div>
+        <p class="section__description">
+          Zajmujemy się sprzedażą detaliczną tkanin oraz szyciem zakupionych w
+          naszym sklepie materiałów. Każde zlecenie traktujemy indywidualnie. Na
+          Państwa życzenie podejmujemy się projektów, takich jak: szycie firan,
+          zasłon, obrusów, kap, poduszek czy innych tekstyliów.
+        </p>
+        <div class="wrapper">
+          <div id="service2" class="section__img wrapper__element"></div>
+          <div id="service3" class="section__img wrapper__element"></div>
         </div>
-        <div class="map"><iframe
+      </section>
+      <section class="section section--about">
+        <h2 class="section__title" data-id="section">O nas</h2>
+        <p class="section__description">
+          Od 1990 roku specjalizujemy się w zakresie kompleksowej dekoracji
+          okna. Założeniem firmy Bella jest przygotowanie cieszącego oko,
+          nowatorskiego wystroju, łącząc elegancję i aktualne trendy, przy
+          równoczesnej kontynuacji sprzedaży wzorów tradycyjnych, sprawdzonych i
+          ponadczasowych.
+        </p>
+      </section>
+      <section class="section contact">
+        <h2 class="section__title" data-id="section">Kontakt</h2>
+        <div class="wrapper">
+          <div class="wrapper__element contact__wrapper">
+            <h3 class="contact__title">Godziny otwarcia:</h3>
+            <p class="contact__description">
+              Poniedziałek - Piątek: 10:00 - 15:00
+            </p>
+            <h3 class="contact__title">Adres:</h3>
+            <p class="contact__description">Pilotów 3/43, 80-460 Gdańsk</p>
+            <h3 class="contact__title">Telefon:</h3>
+            <p class="contact__description">
+              <a href="tel:+480587618212">58 761 82 12</a>
+            </p>
+            <p class="contact__description">
+              <a href="tel:+48573018700">573 018 700</a>
+            </p>
+            <h3 class="contact__title">Email:</h3>
+            <p class="contact__description">
+              <a href="mailto:bella@firany-bella.com.pl"
+                >bella@firany-bella.com.pl</a
+              >
+            </p>
+          </div>
+          <iframe
+            class="contact__map wrapper__element"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2322.9603413950763!2d18.59771886825366!3d54.39301548776433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e8e2d466339f0ed!2sBella.+Aran%C5%BCacja%2C+dekoracja+okien.+Szycie+firan!5e0!3m2!1sen!2spl!4v1536690192521"
-            frameborder="0" style="border:0" allowfullscreen></iframe></div>
-      </div>
-    </div>
-  </div>
-  <footer>&copy; Błażej Plichta</footer>
-
-  <script src="script.js"></script>
-</body>
-
+            frameborder="0"
+            title="map"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">&copy; Błażej Plichta</footer>
+    <script src="script.js"></script>
+  </body>
 </html>

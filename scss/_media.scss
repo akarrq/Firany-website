@@ -1,0 +1,205 @@
+@media (orientation: landscape) and (max-width: 1023px) {
+  $nav-height: 15vh;
+  .nav {
+    height: $nav-height;
+    line-height: $nav-height;
+    &__menu-btn {
+      top: calc($nav-height * 0.5);
+      margin-right: 60px;
+    }
+    &__menu--visible {
+      top: $nav-height;
+      &-item {
+        line-height: calc(100vh / 4 - $nav-height/2);
+      }
+    }
+  }
+  .baner {
+    height: 50vh;
+    margin-top: $nav-height;
+  }
+  .section {
+    &__title {
+      margin-top: 20px;
+      font-size: 32px;
+    }
+    &__description {
+      font-size: 20px;
+    }
+    &__img {
+      margin: 60px 0;
+      height: 50vh;
+    }
+  }
+  .contact {
+    &__map {
+      height: 60vh;
+    }
+  }
+  .footer {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  $nav-height: 10vh;
+
+  .nav {
+    position: fixed;
+    display: flex;
+    height: $nav-height;
+    line-height: $nav-height;
+    &__logo {
+      width: 25%;
+      box-shadow: 0.1px -1.5px 10px 0.1px gray;
+    }
+    &__menu {
+      display: block;
+      margin-left: 10px;
+      width: 100%;
+
+      &-btn {
+        display: none;
+      }
+      &-items {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        background-color: transparent;
+      }
+      &-item {
+        flex-basis: 25%;
+        font-size: 20px;
+        line-height: $nav-height;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .baner {
+    height: 75vh;
+    margin-top: 0;
+    &__first-el {
+      background-image: url(/img/firany1-1280.jpg);
+    }
+    &__second-el {
+      background-image: url(/img/firany2-1280.jpg);
+    }
+    &__third-el {
+      background-image: url(/img/firany3-1280.jpg);
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    &__element {
+      height: 35vh;
+      width: 49%;
+    }
+  }
+  .section {
+    &__title {
+      font-size: 38px;
+    }
+    &__description {
+      font-size: 22px;
+      letter-spacing: 2px;
+      padding: 20px 10px;
+      line-height: 210%;
+    }
+    &__img {
+      height: 50vh;
+    }
+  }
+  #product1 {
+    background-image: url(/img/produkt1-1280.jpg);
+  }
+  #product2 {
+    background-image: url(/img/produkt2-1280.jpg);
+  }
+  #product3 {
+    background-image: url(/img/produkt3-1280.jpg);
+  }
+  #service1 {
+    background-image: url(/img/usluga3-1280.jpg);
+  }
+  #service2 {
+    background-image: url(/img/usluga2-1280.jpg);
+  }
+  #service3 {
+    background-image: url(/img/usluga1-1280.jpg);
+  }
+  .contact {
+    &__wrapper {
+      flex-basis: 35%;
+    }
+    &__title {
+      font-size: 26px;
+      margin: 30px 0 25px;
+    }
+    &__description {
+      font-size: 20px;
+    }
+    &__map {
+      flex-grow: 1;
+      height: 60vh;
+    }
+  }
+
+  .footer {
+    font-size: 10px;
+    line-height: 350%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .site {
+    margin: 0 30px;
+  }
+  .nav {
+    font-size: 32px;
+    &__menu-btn {
+      margin-right: 30px;
+    }
+    &__menu--visible {
+      background-color: transparent;
+      &-item {
+        font-size: 24px;
+        line-height: 6vh;
+        border: 3px solid white;
+      }
+    }
+  }
+
+  .section {
+    &__title {
+      font-size: 38px;
+    }
+    &__description {
+      font-size: 22px;
+    }
+    &__img {
+      margin: 40px 0;
+    }
+  }
+
+  .contact {
+    &__title {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+    &__description {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    &__map {
+      height: 50vh;
+    }
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}

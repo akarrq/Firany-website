@@ -1,0 +1,27 @@
+$main-color: #fff;
+$secondary-color: #eee;
+$font-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: $font-color;
+}
+
+@import "photos";
+@import "menu";
+@import "baner";
+@import "sections";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import "media";
