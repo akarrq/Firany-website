@@ -2,11 +2,16 @@ $main-color: #fff;
 $secondary-color: #eee;
 $font-color: #333;
 
+@font-face {
+  font-family: "Montserrat-Alt1";
+  src: url(/fonts/MontserratAlt1-Light.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Alt1", sans-serif;
   color: $font-color;
 }
 
