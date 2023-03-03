@@ -1,13 +1,14 @@
 @font-face {
-  font-family: "Montserrat-Alt1";
-  src: url(/fonts/MontserratAlt1-Light.woff2);
+  font-family: "Montserrat";
+  src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+  font-display: swap;
 }
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Montserrat-Alt1", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333;
 }
 
@@ -56,6 +57,7 @@
 }
 .nav__menu-btn {
   position: fixed;
+  height: 4vh;
   top: 5vh;
   right: 20px;
   -webkit-transform: translateY(-50%);
@@ -217,6 +219,7 @@ html {
   }
   .nav__menu-btn {
     top: 7.5vh;
+    height: 6vh;
     margin-right: 60px;
   }
   .nav__menu--visible {

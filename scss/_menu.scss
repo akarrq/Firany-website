@@ -18,6 +18,7 @@ $nav-height: 10vh;
     display: none;
     &-btn {
       position: fixed;
+      height: calc($nav-height * 0.4);
       top: calc($nav-height * 0.5);
       right: 20px;
       transform: translateY(-50%);

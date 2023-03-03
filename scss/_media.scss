@@ -5,6 +5,7 @@
     line-height: $nav-height;
     &__menu-btn {
       top: calc($nav-height * 0.5);
+      height: calc($nav-height * 0.4);
       margin-right: 60px;
     }
     &__menu--visible {
