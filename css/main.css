@@ -36,9 +36,27 @@
   background-image: url(/img/usluga1-640.jpg);
 }
 
-.nav {
+.announcement {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #c0392b;
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+}
+.announcement__text {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav {
+  position: fixed;
+  top: 42px;
   left: 0;
   right: 0;
   height: 10vh;
@@ -89,7 +107,7 @@
 
 .baner {
   position: relative;
-  margin-top: 10vh;
+  margin-top: calc(10vh + 42px);
   left: 0;
   right: 0;
   height: 30vh;
@@ -214,6 +232,7 @@ html {
 
 @media (orientation: landscape) and (max-width: 1023px) {
   .nav {
+    top: 42px;
     height: 15vh;
     line-height: 15vh;
   }
@@ -230,7 +249,7 @@ html {
   }
   .baner {
     height: 50vh;
-    margin-top: 15vh;
+    margin-top: calc(15vh + 42px);
   }
   .section__title {
     margin-top: 20px;
@@ -253,6 +272,7 @@ html {
 @media (min-width: 1024px) {
   .nav {
     position: fixed;
+    top: 42px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -293,7 +313,7 @@ html {
   }
   .baner {
     height: 75vh;
-    margin-top: 0;
+    margin-top: 42px;
   }
   .baner__first-el {
     background-image: url(/img/firany1-1280.jpg);
