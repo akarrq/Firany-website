@@ -117,10 +117,40 @@
   right: 0;
   height: 30vh;
   z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.baner__sale {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 32px 24px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+.baner__sale-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+.baner__sale-date {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
 }
 .baner__element {
-  position: relative;
-  left: 0;
+  position: absolute;
+  width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,19 +160,16 @@
           animation: baner 30s ease infinite;
 }
 .baner__first-el {
-  top: 0;
   background-image: url(/img/firany1-640.jpg);
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
 .baner__second-el {
-  top: -100%;
   background-image: url(/img/firany2-640.jpg);
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
 .baner__third-el {
-  top: -200%;
   background-image: url(/img/firany3-640.jpg);
   background-position: bottom;
 }
@@ -260,6 +287,13 @@ html {
     height: 50vh;
     margin-top: calc(15vh + 42px);
   }
+  .baner__sale-title {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+  .baner__sale-date {
+    font-size: 20px;
+  }
   .section__title {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -325,6 +359,15 @@ html {
   .baner {
     height: 75vh;
     margin-top: 42px;
+  }
+  .baner__sale {
+    padding: 40px 32px;
+  }
+  .baner__sale-title {
+    font-size: 36px;
+  }
+  .baner__sale-date {
+    font-size: 24px;
   }
   .baner__first-el {
     background-image: url(/img/firany1-1280.jpg);
@@ -444,6 +487,15 @@ html {
   .footer {
     font-size: 12px;
   }
+  .baner__sale {
+    padding: 32px 28px;
+  }
+  .baner__sale-title {
+    font-size: 28px;
+  }
+  .baner__sale-date {
+    font-size: 20px;
+  }
 }
 @media (orientation: portrait) and (max-width: 767px) {
   .nav {
@@ -457,5 +509,15 @@ html {
   }
   .baner {
     margin-top: calc(10vh + 52px);
+  }
+  .baner__sale {
+    padding: 24px 16px;
+    max-width: 85%;
+  }
+  .baner__sale-title {
+    font-size: 20px;
+  }
+  .baner__sale-date {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
