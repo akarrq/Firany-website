@@ -76,7 +76,7 @@
 .nav__menu-btn {
   position: fixed;
   height: 4vh;
-  top: 5vh;
+  top: calc(42px + 5vh);
   right: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -95,7 +95,7 @@
 .nav__menu--visible {
   position: fixed;
   display: block;
-  top: 10vh;
+  top: calc(10vh + 42px);
   bottom: 0;
   left: 0;
   right: 0;
@@ -237,12 +237,12 @@ html {
     line-height: 15vh;
   }
   .nav__menu-btn {
-    top: 7.5vh;
+    top: calc(42px + 7.5vh);
     height: 6vh;
     margin-right: 60px;
   }
   .nav__menu--visible {
-    top: 15vh;
+    top: calc(15vh + 42px);
   }
   .nav__menu--visible-item {
     line-height: 17.5vh;

@@ -21,11 +21,13 @@ class Menu {
   scrollToSection(e) {
     let clickedElement = e.target;
     this.closeMenu();
+    const announcementBar = document.querySelector('.announcement');
+    const announcementHeight = announcementBar ? announcementBar.offsetHeight : 0;
     for (const section of this.sections) {
       if (section.textContent === clickedElement.textContent) {
         window.scrollTo(
           0,
-          section.offsetTop - this.menu.parentElement.offsetHeight
+          section.offsetTop - this.menu.parentElement.offsetHeight - announcementHeight
         );
       }
     }
